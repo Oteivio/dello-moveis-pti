@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Dello Móveis Planejados</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header slide-down">
+        <div class="header-container flex-row justify-between align-center">
+            <div class="logo">
+                <span class="logo-highlight">Dello</span> MÓVEIS PLANEJADOS
+            </div>
+            <!-- Botão Hambúrguer (Mobile) -->
+            <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="flex-row">
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="#sobre">SOBRE A EMPRESA</a></li>
+                    <li><a href="#ambientes">AMBIENTES</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons flex-row align-center">
+                <a href="https://www.instagram.com/dellomoveisplanejados/" target="_blank" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5511991386955" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <!-- Botão Dark Mode -->
+                <button id="themeToggle" class="theme-btn" title="Alternar Modo Escuro"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero flex-column justify-center reveal fade-in">
+        <div class="carousel-container">
+            <div class="scrolling-wrapper">
+                <div class="bg-strip" style="background-image: url('imagens/Cozinha.jpg');"></div>
+                <div class="bg-strip" style="background-image: url('imagens/Moveis Planejados.jpg');"></div>
+                <div class="bg-strip" style="background-image: url('imagens/download.jpg');"></div>
+                <div class="bg-strip" style="background-image: url('imagens/2f16b8a33598a503fd6dabaeba6974ba.jpg');"></div>
+                <!-- Cópia para o loop -->
+                <div class="bg-strip" style="background-image: url('imagens/Cozinha.jpg');"></div>
+                <div class="bg-strip" style="background-image: url('imagens/Moveis Planejados.jpg');"></div>
+                <div class="bg-strip" style="background-image: url('imagens/download.jpg');"></div>
+                <div class="bg-strip" style="background-image: url('imagens/2f16b8a33598a503fd6dabaeba6974ba.jpg');"></div>
+            </div>
+            <div class="carousel-overlay"></div>
+        </div>
+
+        <div class="hero-content text-center z-10">
+            <h1 class="hero-title">TENHA EM SUA CASA O ENCAIXE<br>PERFEITO QUE SÓ A DELLO PODE<br>PROPORCIONAR</h1>
+        <a href="#contato" class="btn btn-red btn-pulse">FAZER ORÇAMENTO</a>
+    </div>
+    </section>
+
+    <!-- Cards Sobrepostos -->
+    <section class="cards-section reveal slide-up-delay">
+        <div class="cards-container flex-row justify-center text-left">
+            <div class="card flex-column hover-lift">
+                <h3>PROJETOS</h3>
+                <p>Transformamos suas ideias em ambientes funcionais e estéticos, criando o móvel exato para o seu estilo de vida e necessidades do dia a dia.</p>
+                <a href="#ambientes" class="btn btn-card">VER PROJETOS &#10140;</a>
+            </div>
+            <div class="card flex-column hover-lift">
+                <h3>EXPERIÊNCIA</h3>
+                <p>Com anos de trajetória no mercado de alto padrão, nossa equipe domina as melhores técnicas de marcenaria e montagem fina para a sua casa.</p>
+                <a href="#contato" class="btn btn-card btn-card-dark">FALE CONOSCO &#10140;</a>
+            </div>
+            <div class="card flex-column hover-lift">
+                <h3>DESIGN</h3>
+                <p>Buscamos as últimas tendências mundiais de arquitetura para garantir que seu ambiente seja moderno, sofisticado e sempre atemporal.</p>
+                <a href="#sobre" class="btn btn-card">CLIQUE AQUI &#10140;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="sobre" class="quem-somos flex-row align-center reveal fade-in-left">
+        <div class="quem-somos-img hover-lift">
+            <div class="img-placeholder" style="background-image: url('imagens/9d97825272221d7c1e3a08800c8d993c.jpg');"></div>
+        </div>
+        <div class="quem-somos-text flex-column text-justify">
+            <h2>QUEM SOMOS</h2>
+            <p>A Dello Móveis Planejados nasceu do desejo de transformar casas em verdadeiros lares. Trabalhamos com madeira de reflorestamento, ferragens de alta tecnologia e acabamentos premium para entregar máxima durabilidade e requinte aos nossos clientes.</p>
+            <br>
+            <p>Nosso compromisso é com a sua total satisfação. Acompanhamos cada projeto de perto, do desenho inicial até a montagem final, garantindo que nenhum detalhe passe despercebido. Se você busca excelência, pontualidade e exclusividade, está no lugar certo.</p>
+        </div>
+    </section>
+
+    <!-- Avaliações (Agora em Carrossel Loop) -->
+    <section class="avaliacoes flex-column relative reveal fade-in">
+        <h2 class="avaliacoes-title text-center">AVALIAÇÕES DOS CLIENTES</h2>
+        
+        <div class="reviews-carousel">
+            <div class="reviews-track">
+                <!-- Bloco 1 (Original) -->
+                <div class="avaliacao-card flex-column text-justify">
+                    <div class="avaliacao-header flex-row justify-between align-center">
+                        <h4>OTÁVIO</h4>
+                        <span class="nota">4.7</span>
+                    </div>
+                    <p>"O acabamento da cozinha ficou simplesmente impecável. A equipe montou tudo dentro do prazo estabelecido e deixaram o ambiente limpo após o serviço. Recomendo muito!"</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="avaliacao-card flex-column text-justify">
+                    <div class="avaliacao-header flex-row justify-between align-center">
+                        <h4>LETÍCIA</h4>
+                        <span class="nota">4.9</span>
+                    </div>
+                    <p>"Minha sala de estar ganhou outra vida. O painel da TV e os nichos de decoração ficaram exatamente iguais ao projeto 3D aprovado. O atendimento deles é nota 10."</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="avaliacao-card flex-column text-justify">
+                    <div class="avaliacao-header flex-row justify-between align-center">
+                        <h4>ELAINE</h4>
+                        <span class="nota">4.8</span>
+                    </div>
+                    <p>"Fiz os móveis do meu quarto de casal com a Dello e o espaço foi tão bem aproveitado que parece que o ambiente dobrou de tamanho! Espaço interno excelente nos armários."</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                
+                <!-- Bloco 2 (Duplicado para o Loop Infinito) -->
+                <div class="avaliacao-card flex-column text-justify">
+                    <div class="avaliacao-header flex-row justify-between align-center">
+                        <h4>OTÁVIO</h4>
+                        <span class="nota">4.7</span>
+                    </div>
+                    <p>"O acabamento da cozinha ficou simplesmente impecável. A equipe montou tudo dentro do prazo estabelecido e deixaram o ambiente limpo após o serviço. Recomendo muito!"</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="avaliacao-card flex-column text-justify">
+                    <div class="avaliacao-header flex-row justify-between align-center">
+                        <h4>LETÍCIA</h4>
+                        <span class="nota">4.9</span>
+                    </div>
+                    <p>"Minha sala de estar ganhou outra vida. O painel da TV e os nichos de decoração ficaram exatamente iguais ao projeto 3D aprovado. O atendimento deles é nota 10."</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="avaliacao-card flex-column text-justify">
+                    <div class="avaliacao-header flex-row justify-between align-center">
+                        <h4>ELAINE</h4>
+                        <span class="nota">4.8</span>
+                    </div>
+                    <p>"Fiz os móveis do meu quarto de casal com a Dello e o espaço foi tão bem aproveitado que parece que o ambiente dobrou de tamanho! Espaço interno excelente nos armários."</p>
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="personagem-3d hover-float desktop-only">
+            <img src="imagens/image-removebg-preview.png" alt="Personagem 3D" class="img-3d-avaliacoes">
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="ambientes" class="servicos flex-row align-center justify-between reveal fade-in-right">
+        <div class="servicos-text flex-column text-justify">
+            <h2>COZINHAS &amp; GOURMET</h2>
+            <p>Projetamos espaços inteligentes, integrando seus eletrodomésticos e otimizando a circulação. A solução perfeita para quem ama cozinhar, reunir a família e receber amigos com muito estilo e praticidade.</p>
+            
+            <h2 style="margin-top: 20px;">QUARTOS &amp; CLOSETS</h2>
+            <p>Desenvolvemos guarda-roupas e closets sob medida que maximizam a organização. Utilizamos divisórias personalizadas para joias, sapatos e roupas longas, além de iluminação embutida em LED para facilitar o seu dia a dia.</p>
+        </div>
+        <!-- Galeria Desktop (Oculta antes em telas menores para não colidir) -->
+        <div class="servicos-gallery relative desktop-only">
+            <div class="gallery-img img-main" style="background-image: url('imagens/2f16b8a33598a503fd6dabaeba6974ba.jpg');"></div>
+            <div class="gallery-img img-rotated-1" style="background-image: url('imagens/960d632bbb9f7cce7bc29cba5e0345e8.jpg');"></div>
+            <div class="gallery-img img-rotated-2" style="background-image: url('imagens/bc132197ab0610acee9f0048541b558b.jpg');"></div>
+        </div>
+        <!-- Galeria Mobile -->
+        <div class="mobile-slider mobile-only">
+            <div class="mobile-slider-track">
+                <div class="mobile-slide" style="background-image: url('imagens/2f16b8a33598a503fd6dabaeba6974ba.jpg');"></div>
+                <div class="mobile-slide" style="background-image: url('imagens/960d632bbb9f7cce7bc29cba5e0345e8.jpg');"></div>
+                <div class="mobile-slide" style="background-image: url('imagens/bc132197ab0610acee9f0048541b558b.jpg');"></div>
+            </div>
+            <p class="slider-hint"><i class="fas fa-hand-point-left"></i> Deslize para ver mais</p>
+        </div>
+    </section>
+
+    <!-- Por que nos escolher -->
+    <section class="pq-escolher flex-column align-center justify-center reveal fade-in">
+        <h2>Por que nos escolher?</h2>
+        <p class="destaque">OFERECEMOS GARANTIA DE QUALIDADE E ATENDIMENTO<br>PERSONALIZADO TUDO ISSO POR UM BOM PREÇO!</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato flex-column align-center reveal slide-up">
+        <h2 class="contato-title text-center">ENTRE EM CONTATO!</h2>
+        <div class="form-wrapper hover-glow text-center">
+            <p class="form-subtitle">PREENCHA O FORMULÁRIO<br>PARA ENTRARMOS EM<br>CONTATO</p>
+            <form id="contactForm" class="flex-column form-contato">
+                <div class="input-container">
+                    <input type="text" placeholder="NOME COMPLETO" required>
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="SEU MELHOR E-MAIL" required>
+                </div>
+                <div class="input-container">
+                    <input type="tel" id="telefoneInput" placeholder="TELEFONE OU WHATSAPP" maxlength="15" required>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-gray btn-submit">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer flex-column">
+        <div class="footer-container flex-row justify-between reveal fade-in">
+            <div class="footer-info flex-column">
+                <div class="logo"><span class="logo-highlight">Dello</span> <br>MÓVEIS PLANEJADOS</div>
+                <p>Especialistas em realizar sonhos e montar lares inesquecíveis. Traga seu projeto para a Dello.</p>
+            </div>
+            <div class="footer-contato flex-column">
+                <h4>FALE CONOSCO</h4>
+                <p>📧 contato@dellomoveis.com.br</p>
+                <p><a href="https://api.whatsapp.com/send?phone=5511991386955" target="_blank" style="color: inherit; text-decoration: none;">📱 WhatsApp: (11) 99138-6955</a></p>
+                <p><a href="tel:+5511991386955" style="color: inherit; text-decoration: none;">📞 Ligar: (11) 99138-6955</a></p>
+            </div>
+            <div class="footer-redes flex-column">
+                <h4>SIGA-NOS</h4>
+                <div class="flex-column" style="gap: 10px;">
+                    <a href="https://www.instagram.com/dellomoveisplanejados/" target="_blank">Instagram (@dellomoveisplanejados)</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom align-center text-center">
+            <p>todos os direitos reservados - Dello Móveis Planejados © 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if(localStorage.getItem('dark-mode') === 'enabled') {
+            body.classList.add('dark-mode');
+            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+        });
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('nav-active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-xmark');
+            });
+        });
+
+        const telefoneInput = document.getElementById('telefoneInput');
+        telefoneInput.addEventListener('input', function (e) {
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            
+            submitBtn.classList.add('btn-success');
+            submitBtn.textContent = 'ENVIADO!';
+            
+            setTimeout(() => {
+                submitBtn.classList.remove('btn-success');
+                submitBtn.textContent = 'ENVIAR';
+                contactForm.reset();
+            }, 3000);
+        });
+        
+        const reveals = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            reveals.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if(elementTop < windowHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', revealOnScroll);
+        setTimeout(revealOnScroll, 100); 
+    </script>
+</body>
+</html>
